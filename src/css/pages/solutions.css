@@ -196,3 +196,27 @@
 
 
 }
+@media (max-width:430px){
+
+
+    .solutions{
+
+        padding:60px 0;
+
+    }
+
+
+    .solution-card{
+
+        padding:22px 15px;
+
+    }
+
+
+    .solution-card h3{
+
+        font-size:1.15rem;
+
+    }
+
+}

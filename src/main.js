@@ -103,9 +103,7 @@ Ver trabajos
 
 <div class="hero-image">
 
-
-<img 
-<img src="/images/printer.png">
+<img src="/images/printer.png"> 
 
 
 </div>
