@@ -1,0 +1,42 @@
+/* ==========================================================
+   VERTEX LAB - DESIGN SYSTEM
+   Variables globales
+   ========================================================== */
+
+:root {
+
+    /* Colores */
+
+    --bg-main: #050505;
+
+    --bg-card: #111111;
+
+    --text-main: #ffffff;
+
+    --text-secondary: #a1a1a6;
+
+    --accent: #00d26a;
+
+    --accent-hover: #00b85c;
+
+
+    /* Bordes */
+
+    --border: rgba(255,255,255,0.08);
+
+
+    /* Tamaños */
+
+    --container: 1200px;
+
+
+    /* Radios */
+
+    --radius: 20px;
+
+
+    /* Animaciones */
+
+    --transition: .35s ease;
+
+}

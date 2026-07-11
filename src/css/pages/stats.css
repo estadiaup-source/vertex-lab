@@ -1,0 +1,135 @@
+/* ==========================================
+   STATS - VERTEX LAB
+========================================== */
+
+.stats{
+
+    padding:100px 0;
+
+}
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+.stat-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:
+    linear-gradient(
+    145deg,
+    rgba(255,255,255,.06),
+    rgba(255,255,255,.02)
+    );
+
+    border:1px solid var(--border);
+
+    backdrop-filter:blur(12px);
+
+    transition:.45s ease;
+
+}
+
+
+
+.stat-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:150px;
+
+    height:150px;
+
+    top:-70px;
+
+    right:-70px;
+
+    background:rgba(0,168,89,.15);
+
+    border-radius:50%;
+
+    filter:blur(30px);
+
+    opacity:0;
+
+    transition:.45s ease;
+
+}
+
+
+
+.stat-card:hover::before{
+
+    opacity:1;
+
+}
+
+
+
+.stat-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:rgba(0,210,106,.6);
+
+    box-shadow:
+
+    0 25px 60px rgba(0,168,89,.2);
+
+}
+
+
+
+.stat-card h2{
+
+    position:relative;
+
+    font-size:3.2rem;
+
+    font-weight:800;
+
+    color:var(--accent);
+
+    margin-bottom:12px;
+
+    transition:.35s ease;
+
+}
+
+
+
+.stat-card:hover h2{
+
+    transform:scale(1.08);
+
+}
+
+
+
+.stat-card p{
+
+    position:relative;
+
+    color:var(--text-secondary);
+
+    font-size:1rem;
+
+    line-height:1.6;
+
+}

@@ -1,0 +1,6 @@
+User-agent: *
+
+Allow: /
+
+
+Sitemap: https://vertexlab.vercel.app/sitemap.xml

@@ -1,0 +1,261 @@
+.quote{
+
+    padding:140px 0;
+
+}
+
+
+
+.quote-box{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    padding:70px;
+
+    border-radius:35px;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(255,255,255,.08),
+    rgba(255,255,255,.02)
+    );
+
+    border:1px solid var(--border);
+
+}
+
+
+
+.quote-content span{
+
+    color:var(--accent);
+
+    letter-spacing:3px;
+
+    font-size:.8rem;
+
+}
+
+
+
+.quote-content h2{
+
+    font-size:4rem;
+
+    margin:25px 0;
+
+    line-height:1;
+
+}
+
+
+
+.quote-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea{
+
+
+    background:#0c0c0c;
+
+    border:1px solid var(--border);
+
+    padding:16px;
+
+    border-radius:14px;
+
+    color:white;
+
+    font-size:1rem;
+
+
+}
+
+
+
+.quote-form textarea{
+
+    height:150px;
+
+    resize:none;
+
+}
+/* INPUT FOCUS */
+
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus{
+
+    outline:none;
+
+    border-color:var(--accent);
+
+    box-shadow:
+    0 0 0 3px rgba(0,168,89,.15);
+
+}
+
+
+
+/* SELECT */
+
+.quote-form select{
+
+    cursor:pointer;
+
+}
+
+
+
+/* BOTÓN */
+
+.quote-form .btn-primary{
+
+    margin-top:10px;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+
+
+.quote-form .btn-primary:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* MENSAJE DEL FORMULARIO */
+
+.form-message{
+
+    margin-top:10px;
+
+    font-size:.9rem;
+
+    color:var(--accent);
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+
+    .quote-box{
+
+        grid-template-columns:1fr;
+
+        padding:40px;
+
+        gap:40px;
+
+    }
+
+
+    .quote-content h2{
+
+        font-size:2.8rem;
+
+    }
+
+
+}
+
+
+
+@media(max-width:500px){
+
+
+    .quote-box{
+
+        padding:25px;
+
+    }
+
+
+    .quote-content h2{
+
+        font-size:2.2rem;
+
+    }
+
+
+}
+.form-message{
+
+    margin-top:15px;
+
+    color:var(--accent);
+
+    font-size:.9rem;
+
+    min-height:20px;
+
+}
+.quote-form button:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
+/* ==========================================
+   FORM VALIDATION
+========================================== */
+
+
+.form-message{
+
+    min-height:22px;
+
+    margin-top:10px;
+
+    font-size:.9rem;
+
+    color:var(--accent);
+
+}
+
+
+
+.quote-form button:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus{
+
+    outline:none;
+
+    border-color:var(--accent);
+
+    box-shadow:0 0 20px rgba(0,210,106,.15);
+
+}

@@ -1,0 +1,470 @@
+/* ==========================================
+   NAVBAR - VERTEX LAB
+   ========================================== */
+
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    padding:20px 0;
+
+    transition:all .35s ease;
+
+}
+.header{
+
+    animation:
+
+    navbarShow .8s ease;
+
+}
+
+
+
+@keyframes navbarShow{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+.navbar{
+
+    height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 28px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.03);
+
+    backdrop-filter:blur(12px);
+
+    transition:all .35s ease;
+.navbar{
+
+    position:relative;
+
+}
+}
+
+
+/* LOGO */
+
+.logo{
+
+    font-size:1.5rem;
+
+    font-weight:800;
+
+    letter-spacing:-1px;
+
+}
+
+
+.logo span{
+
+    color:var(--accent);
+
+}
+
+
+
+/* MENU */
+
+.nav-links{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+
+.nav-links a{
+
+    position:relative;
+
+    color:var(--text-secondary);
+
+    font-size:.95rem;
+
+    transition:.3s;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--accent);
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:white;
+
+}
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+
+
+.nav-links a:hover{
+
+    color:white;
+
+    transform:translateY(-2px);
+
+}
+
+/* BOTON */
+
+.btn-primary{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:var(--accent);
+
+    color:#000;
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+    transition:.35s ease;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 40px rgba(0,210,106,.35);
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.logo-mark{
+
+    width:38px;
+
+    height:38px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:12px;
+
+    background:var(--accent);
+
+    color:#000;
+
+    font-weight:900;
+
+    box-shadow:
+
+    0 0 25px rgba(0,210,106,.35);
+
+    transition:.35s ease;
+
+}
+
+
+.logo:hover .logo-mark{
+
+    transform:
+
+    rotate(8deg)
+    scale(1.08);
+
+}
+/* ==========================================
+   NAVBAR SCROLLED
+========================================== */
+
+.header.scrolled{
+
+    padding:12px 0;
+
+}
+
+.header.scrolled .navbar{
+
+    background:rgba(10,10,10,.78);
+
+    backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.logo{
+
+    transition:.3s;
+
+}
+
+.logo:hover{
+
+    transform:scale(1.03);
+
+}
+/* ==========================================
+   EFECTO BRILLO EN BOTÓN
+========================================== */
+
+
+
+.btn-primary::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.45),
+        transparent
+    );
+
+    transition:left .7s ease;
+
+}
+
+.btn-primary:hover::before{
+
+    left:140%;
+
+}
+.btn-primary{
+
+    position:relative;
+
+    overflow:hidden;
+
+    z-index:1;
+
+}
+.btn-primary::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:-1;
+
+    border-radius:999px;
+
+    box-shadow:
+
+    0 0 0 0 rgba(0,210,106,.5);
+
+    animation:pulseButton 3s infinite;
+
+}
+
+
+
+@keyframes pulseButton{
+
+    0%{
+
+        box-shadow:
+        0 0 0 0 rgba(0,210,106,.4);
+
+    }
+
+
+    70%{
+
+        box-shadow:
+        0 0 0 18px rgba(0,210,106,0);
+
+    }
+
+
+    100%{
+
+        box-shadow:
+        0 0 0 0 rgba(0,210,106,0);
+
+    }
+
+}
+
+/* ==========================================
+   MENU HAMBURGUESA
+========================================== */
+
+.menu-toggle{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+}
+
+@media (max-width:768px){
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+
+    .btn-primary{
+
+        display:flex;
+
+        padding:10px 18px;
+
+    }
+
+.nav-links{
+
+    position:absolute;
+
+    top:85px;
+
+    left:20px;
+
+    right:20px;
+
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:30px;
+
+
+    background:rgba(10,10,10,.9);
+
+    backdrop-filter:blur(20px);
+
+
+    border:1px solid var(--border);
+
+    border-radius:25px;
+
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transform:translateY(-20px);
+
+    transition:.35s ease;
+
+}
+
+
+
+.nav-links.active{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+    transform:translateY(0);
+
+}
+
+}
+.menu-toggle{
+
+    transition:.3s ease;
+
+}
+
+
+.menu-toggle.open{
+
+    transform:rotate(90deg);
+
+}
