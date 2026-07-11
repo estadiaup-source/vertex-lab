@@ -8,6 +8,9 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "dependencies": {
+    "aos": "^2.3.4"
+  },
   "devDependencies": {
     "vite": "^8.1.1"
   }
