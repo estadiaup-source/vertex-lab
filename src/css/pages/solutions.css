@@ -142,3 +142,57 @@
     color:var(--text-secondary);
 
 }
+/* ==========================
+   RESPONSIVE MOBILE
+========================== */
+
+@media (max-width: 768px){
+
+
+    .solutions{
+
+        padding:80px 0;
+
+    }
+
+
+    .solutions-grid{
+
+        grid-template-columns:1fr;
+        gap:18px;
+
+    }
+
+
+    .solution-card{
+
+        padding:25px 20px;
+        min-height:auto;
+        text-align:center;
+
+    }
+
+
+    .solution-number{
+
+        margin-bottom:20px;
+
+    }
+
+
+    .solution-card h3{
+
+        font-size:1.25rem;
+
+    }
+
+
+    .solution-card p{
+
+        font-size:.95rem;
+        line-height:1.6;
+
+    }
+
+
+}
